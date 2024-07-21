@@ -1,0 +1,8 @@
+services:
+  springboot-app:
+    container_name: large-file-read-challenge
+    image: springboot-app
+    restart: on-failure
+    build: .
+    ports:
+      - "8081:8081"
